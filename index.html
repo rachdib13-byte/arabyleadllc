@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,14 @@
   <meta name="description" content="ARABYLEAD helps creators, coaches, and experts monetize their audience and grow their digital product businesses through strategic offers, sales systems, and growth solutions.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#2563EB">
+  <script>(function(){try{var l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("arabylead_lang");if(l==="ar"){document.documentElement.lang="ar";document.documentElement.dir="rtl";document.documentElement.setAttribute("data-lang-loading","");setTimeout(function(){document.documentElement.removeAttribute("data-lang-loading")},1200)}}catch(e){}})();</script>
   <link rel="canonical" href="https://arabylead.com/">
+  <link rel="alternate" hreflang="en" href="https://arabylead.com/">
+  <link rel="alternate" hreflang="ar" href="https://arabylead.com/?lang=ar">
+  <link rel="alternate" hreflang="x-default" href="https://arabylead.com/">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_AR">
   <meta property="og:title" content="ARABYLEAD | Turn Your Audience Into Revenue">
   <meta property="og:description" content="ARABYLEAD helps creators, coaches, and experts monetize their audience and grow their digital product businesses through strategic offers, sales systems, and growth solutions.">
   <meta property="og:url" content="https://arabylead.com/">
@@ -20,11 +26,11 @@
   <meta name="twitter:image" content="https://arabylead.com/assets/og-image.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="home">
   <div class="loader" aria-hidden="true">
     <div class="loader-mark">
       <span></span><span></span><span></span>
@@ -32,22 +38,29 @@
   </div>
 
   <header class="site-header" id="top">
-    <nav class="navbar" aria-label="Primary navigation">
-      <a class="brand" href="#home" aria-label="ARABYLEAD LLC home">
+    <nav class="navbar" aria-label="Primary" data-i18n-aria-label="common.primaryNavAria">
+      <a class="brand" href="#home" aria-label="ARABYLEAD LLC home" data-i18n-aria-label="common.brandAria">
         <span class="brand-icon" aria-hidden="true"><img src="assets/logo.svg" alt="" width="40" height="40"></span>
-        <span>ARABYLEAD</span>
+        <span dir="ltr">ARABYLEAD</span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
       <div class="nav-menu">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#outcomes">Outcomes</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" data-i18n="common.navHome">Home</a>
+        <a href="#services" data-i18n="common.navServices">Services</a>
+        <a href="#outcomes" data-i18n="common.navOutcomes">Outcomes</a>
+        <a href="#about" data-i18n="common.navAbout">About</a>
+        <a href="#contact" data-i18n="common.navContact">Contact</a>
       </div>
-      <a class="nav-cta btn-ripple" href="#contact">Work With Us</a>
+      <div class="nav-actions">
+        <div class="lang-switcher" role="group" aria-label="Language selection" data-i18n-aria-label="common.langGroupAria">
+          <button type="button" class="lang-btn active" data-lang-btn="en" aria-pressed="true" aria-label="EN — English" data-i18n-aria-label="common.switchToEn" lang="en">EN</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="ar" aria-pressed="false" aria-label="AR — العربية" data-i18n-aria-label="common.switchToAr" lang="ar">AR</button>
+        </div>
+        <a class="nav-cta btn-ripple" href="#contact" data-i18n="common.navCta">Work With Us</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" data-i18n-aria-label="common.openMenu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -55,21 +68,21 @@
     <section class="hero section-shell" id="home">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">TURN YOUR AUDIENCE INTO CUSTOMERS</p>
-        <h1>Helping Creators Turn Their Audience Into Revenue</h1>
-        <p class="hero-copy">We help creators, coaches, and experts monetize their audience by turning their knowledge into digital products people want to buy — and building the systems that help those products sell.</p>
+        <p class="eyebrow" data-i18n="home.heroEyebrow">TURN YOUR AUDIENCE INTO CUSTOMERS</p>
+        <h1 data-i18n="home.heroTitle">Helping Creators Turn Their Audience Into Revenue</h1>
+        <p class="hero-copy" data-i18n="home.heroCopy">We help creators, coaches, and experts monetize their audience by turning their knowledge into digital products people want to buy — and building the systems that help those products sell.</p>
         <div class="hero-actions">
-          <a class="button button-primary btn-ripple" href="#contact">Start a Conversation</a>
-          <a class="button button-secondary btn-ripple" href="#services">Our Services</a>
+          <a class="button button-primary btn-ripple" href="#contact" data-i18n="home.heroCtaPrimary">Start a Conversation</a>
+          <a class="button button-secondary btn-ripple" href="#services" data-i18n="home.heroCtaSecondary">Our Services</a>
         </div>
-        <div class="hero-metrics" aria-label="Core creator outcomes">
-          <div><strong>Profitable Offers</strong><span>Packaged around what your audience wants to buy</span></div>
-          <div><strong>Customer Conversion</strong><span>Turning attention and trust into paying customers</span></div>
-          <div><strong>Consistent Sales</strong><span>Systems built to grow your digital product business</span></div>
+        <div class="hero-metrics" aria-label="Core creator outcomes" data-i18n-aria-label="home.heroMetricsAria">
+          <div><strong data-i18n="home.heroMetric1Title">Profitable Offers</strong><span data-i18n="home.heroMetric1Sub">Packaged around what your audience wants to buy</span></div>
+          <div><strong data-i18n="home.heroMetric2Title">Customer Conversion</strong><span data-i18n="home.heroMetric2Sub">Turning attention and trust into paying customers</span></div>
+          <div><strong data-i18n="home.heroMetric3Title">Consistent Sales</strong><span data-i18n="home.heroMetric3Sub">Systems built to grow your digital product business</span></div>
         </div>
       </div>
-      <div class="hero-visual reveal" aria-label="Creator monetization and digital product growth illustration">
-        <svg viewBox="0 0 620 520" class="floating-illustration" role="img">
+      <div class="hero-visual reveal" aria-label="Creator monetization and digital product growth illustration" data-i18n-aria-label="home.heroVisualAria">
+        <svg viewBox="0 0 620 520" class="floating-illustration" role="img" aria-hidden="true">
           <defs>
             <linearGradient id="panelGrad" x1="0" x2="1" y1="0" y2="1">
               <stop offset="0%" stop-color="#FFFFFF"/>
@@ -118,121 +131,121 @@
 
     <section class="section section-shell" id="services">
       <div class="section-heading reveal">
-        <p class="eyebrow">Services</p>
-        <h2>Solutions that turn attention into digital product sales</h2>
-        <p>From packaging your expertise into an irresistible offer to creating a smooth buying experience, every solution is designed to help you monetize your audience.</p>
+        <p class="eyebrow" data-i18n="home.servicesEyebrow">Services</p>
+        <h2 data-i18n="home.servicesTitle">Solutions that turn attention into digital product sales</h2>
+        <p data-i18n="home.servicesSubtitle">From packaging your expertise into an irresistible offer to creating a smooth buying experience, every solution is designed to help you monetize your audience.</p>
       </div>
       <div class="card-grid services-grid">
         <article class="service-card reveal">
           <span class="icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 4.4-2.7 7-8 8-5.3-1-8-3.6-8-8V7l8-4zM9 12l2 2 4-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <h3>Irresistible Offers</h3>
-          <p>Package your knowledge into high-value digital offers with sharp positioning, strategic pricing, compelling bonuses, and perceived value that makes your audience want to buy.</p>
+          <h3 data-i18n="home.service1Title">Irresistible Offers</h3>
+          <p data-i18n="home.service1Desc">Package your knowledge into high-value digital offers with sharp positioning, strategic pricing, compelling bonuses, and perceived value that makes your audience want to buy.</p>
         </article>
         <article class="service-card reveal">
           <span class="icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16M6 10h12M8 15h8M10 20h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
-          <h3>Sales Funnels</h3>
-          <p>Turn interested followers and visitors into paying customers through strategic customer journeys designed to convert attention into consistent sales.</p>
+          <h3 data-i18n="home.service2Title">Sales Funnels</h3>
+          <p data-i18n="home.service2Desc">Turn interested followers and visitors into paying customers through strategic customer journeys designed to convert attention into consistent sales.</p>
         </article>
         <article class="service-card reveal">
           <span class="icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7h18v10H3zM3 10h18M7 15h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <h3>Payment Solutions</h3>
-          <p>Make buying your digital products simple, smooth, and secure with reliable checkout and payment experiences that remove friction between interest and purchase.</p>
+          <h3 data-i18n="home.service3Title">Payment Solutions</h3>
+          <p data-i18n="home.service3Desc">Make buying your digital products simple, smooth, and secure with reliable checkout and payment experiences that remove friction between interest and purchase.</p>
         </article>
         <article class="service-card reveal">
           <span class="icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18V6M4 18h16M8 15l3-4 3 2 5-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <h3>Conversion Optimization</h3>
-          <p>Improve your buying experience and sales performance so more interested visitors take action, complete their purchase, and become paying customers.</p>
+          <h3 data-i18n="home.service4Title">Conversion Optimization</h3>
+          <p data-i18n="home.service4Desc">Improve your buying experience and sales performance so more interested visitors take action, complete their purchase, and become paying customers.</p>
         </article>
         <article class="service-card reveal">
           <span class="icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <h3>Marketing</h3>
-          <p>Reach the right audience, attract qualified buyers, and create ongoing opportunities to sell and grow your digital products.</p>
+          <h3 data-i18n="home.service5Title">Marketing</h3>
+          <p data-i18n="home.service5Desc">Reach the right audience, attract qualified buyers, and create ongoing opportunities to sell and grow your digital products.</p>
         </article>
       </div>
     </section>
 
     <section class="section section-shell" id="who-we-work-with">
       <div class="section-heading reveal">
-        <p class="eyebrow">WHO WE WORK WITH</p>
-        <h2>Built for Creators &amp; Digital Product Businesses</h2>
-        <p>We partner with content creators, coaches, consultants, educators, and experts who want to monetize their knowledge, expertise, and audience through digital products.</p>
+        <p class="eyebrow" data-i18n="home.whoEyebrow">WHO WE WORK WITH</p>
+        <h2 data-i18n="home.whoTitle">Built for Creators &amp; Digital Product Businesses</h2>
+        <p data-i18n="home.whoSubtitle">We partner with content creators, coaches, consultants, educators, and experts who want to monetize their knowledge, expertise, and audience through digital products.</p>
       </div>
       <div class="feature-grid">
-        <article class="feature-card reveal"><span>✓</span><h3>Online Courses</h3><p>Turn your expertise into structured learning products that deliver real value to your audience and generate consistent sales.</p></article>
-        <article class="feature-card reveal"><span>✓</span><h3>Coaching Programs</h3><p>Package high-value coaching into compelling offers with a clear, confident path from interest to enrollment.</p></article>
-        <article class="feature-card reveal"><span>✓</span><h3>Digital Templates</h3><p>Monetize practical templates, toolkits, and resources that give your audience immediate value and a reason to buy.</p></article>
-        <article class="feature-card reveal"><span>✓</span><h3>Memberships</h3><p>Create recurring revenue opportunities around digital communities, content libraries, and ongoing member value.</p></article>
-        <article class="feature-card reveal"><span>✓</span><h3>E-books &amp; Guides</h3><p>Transform your insights into accessible digital guides and playbooks that turn followers into paying customers.</p></article>
-        <article class="feature-card reveal"><span>✓</span><h3>Digital Services</h3><p>Package your specialized expertise into clear, scalable digital offers built to attract and convert ideal clients.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.who1Title">Online Courses</h3><p data-i18n="home.who1Desc">Turn your expertise into structured learning products that deliver real value to your audience and generate consistent sales.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.who2Title">Coaching Programs</h3><p data-i18n="home.who2Desc">Package high-value coaching into compelling offers with a clear, confident path from interest to enrollment.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.who3Title">Digital Templates</h3><p data-i18n="home.who3Desc">Monetize practical templates, toolkits, and resources that give your audience immediate value and a reason to buy.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.who4Title">Memberships</h3><p data-i18n="home.who4Desc">Create recurring revenue opportunities around digital communities, content libraries, and ongoing member value.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.who5Title">E-books &amp; Guides</h3><p data-i18n="home.who5Desc">Transform your insights into accessible digital guides and playbooks that turn followers into paying customers.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.who6Title">Digital Services</h3><p data-i18n="home.who6Desc">Package your specialized expertise into clear, scalable digital offers built to attract and convert ideal clients.</p></article>
       </div>
     </section>
 
     <section class="section process-section" id="outcomes">
       <div class="section-shell">
         <div class="section-heading reveal">
-          <p class="eyebrow">Outcomes</p>
-          <h2>From Audience to Revenue</h2>
-          <p>Your audience already represents an opportunity. We help you turn that attention into a digital product business with the right offer, a clear buying experience, and a system designed to generate sales.</p>
+          <p class="eyebrow" data-i18n="home.outcomesEyebrow">Outcomes</p>
+          <h2 data-i18n="home.outcomesTitle">From Audience to Revenue</h2>
+          <p data-i18n="home.outcomesSubtitle">Your audience already represents an opportunity. We help you turn that attention into a digital product business with the right offer, a clear buying experience, and a system designed to generate sales.</p>
         </div>
         <div class="timeline">
-          <article class="timeline-card reveal"><span>01</span><h3>Existing Attention</h3><p>You've already built trust with your followers. We help you unlock the commercial value inside the audience you have today.</p></article>
-          <article class="timeline-card reveal"><span>02</span><h3>A Profitable Offer</h3><p>Your knowledge is packaged into a clear, valuable digital product offer designed around what your audience genuinely wants to buy.</p></article>
-          <article class="timeline-card reveal"><span>03</span><h3>Customers Who Buy</h3><p>Interested followers move naturally from content to checkout through a smooth, persuasive buying experience.</p></article>
-          <article class="timeline-card reveal"><span>04</span><h3>Consistent Growth</h3><p>A reliable sales system that helps you sell your digital products consistently and grow your business over time.</p></article>
+          <article class="timeline-card reveal"><span aria-hidden="true">01</span><h3 data-i18n="home.outcome1Title">Existing Attention</h3><p data-i18n="home.outcome1Desc">You've already built trust with your followers. We help you unlock the commercial value inside the audience you have today.</p></article>
+          <article class="timeline-card reveal"><span aria-hidden="true">02</span><h3 data-i18n="home.outcome2Title">A Profitable Offer</h3><p data-i18n="home.outcome2Desc">Your knowledge is packaged into a clear, valuable digital product offer designed around what your audience genuinely wants to buy.</p></article>
+          <article class="timeline-card reveal"><span aria-hidden="true">03</span><h3 data-i18n="home.outcome3Title">Customers Who Buy</h3><p data-i18n="home.outcome3Desc">Interested followers move naturally from content to checkout through a smooth, persuasive buying experience.</p></article>
+          <article class="timeline-card reveal"><span aria-hidden="true">04</span><h3 data-i18n="home.outcome4Title">Consistent Growth</h3><p data-i18n="home.outcome4Desc">A reliable sales system that helps you sell your digital products consistently and grow your business over time.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section section-shell about-split" id="about">
       <div class="about-panel reveal">
-        <p class="eyebrow">About ARABYLEAD</p>
-        <h2>We Believe Every Audience Has Potential.</h2>
-        <p>Creators spend years building trust, sharing knowledge, and growing their communities. We believe that audience can become more than views, followers, and engagement.</p>
-        <p>ARABYLEAD helps creators turn their knowledge, influence, and audience into digital product businesses — creating new revenue opportunities from what they already know and the community they have built.</p>
+        <p class="eyebrow" data-i18n="home.aboutEyebrow">About ARABYLEAD</p>
+        <h2 data-i18n="home.aboutTitle">We Believe Every Audience Has Potential.</h2>
+        <p data-i18n="home.aboutP1">Creators spend years building trust, sharing knowledge, and growing their communities. We believe that audience can become more than views, followers, and engagement.</p>
+        <p data-i18n="home.aboutP2">ARABYLEAD helps creators turn their knowledge, influence, and audience into digital product businesses — creating new revenue opportunities from what they already know and the community they have built.</p>
       </div>
       <div class="stats-panel reveal">
-        <div><strong>Creator Monetization</strong><span>Turning audience trust and attention into paying customers</span></div>
-        <div><strong>Digital Products Only</strong><span>Exclusively focused on courses, coaching, guides, and digital offers</span></div>
-        <div><strong>Built for Consistent Sales</strong><span>Offers and buying experiences designed for long-term growth</span></div>
+        <div><strong data-i18n="home.aboutStat1Title">Creator Monetization</strong><span data-i18n="home.aboutStat1Sub">Turning audience trust and attention into paying customers</span></div>
+        <div><strong data-i18n="home.aboutStat2Title">Digital Products Only</strong><span data-i18n="home.aboutStat2Sub">Exclusively focused on courses, coaching, guides, and digital offers</span></div>
+        <div><strong data-i18n="home.aboutStat3Title">Built for Consistent Sales</strong><span data-i18n="home.aboutStat3Sub">Offers and buying experiences designed for long-term growth</span></div>
       </div>
     </section>
 
     <section class="section section-shell" id="why-us">
       <div class="section-heading reveal">
-        <p class="eyebrow">Why ARABYLEAD</p>
-        <h2>Focused on the outcomes that grow your digital product business</h2>
+        <p class="eyebrow" data-i18n="home.whyEyebrow">Why ARABYLEAD</p>
+        <h2 data-i18n="home.whyTitle">Focused on the outcomes that grow your digital product business</h2>
       </div>
       <div class="feature-grid">
-        <article class="feature-card reveal"><span>✓</span><h3>Monetization-Focused Thinking</h3><p>Every decision centers on helping you turn audience trust and expertise into real digital product revenue opportunities.</p></article>
-        <article class="feature-card reveal"><span>✓</span><h3>Digital Product Specialization</h3><p>We work exclusively with creators, coaches, and experts selling digital products — never physical inventory.</p></article>
-        <article class="feature-card reveal"><span>✓</span><h3>Attention Into Sales</h3><p>We bridge the gap between views, followers, and engagement and a clear path to becoming a paying customer.</p></article>
-        <article class="feature-card reveal"><span>✓</span><h3>Strategic Offers</h3><p>Positioning, pricing, and packaging designed to make your digital products compelling and easy to say yes to.</p></article>
-        <article class="feature-card reveal"><span>✓</span><h3>Conversion-Focused Experiences</h3><p>Clear customer journeys and friction-free checkout experiences built to help more visitors become buyers.</p></article>
-        <article class="feature-card reveal"><span>✓</span><h3>Systems Designed for Growth</h3><p>Foundations built so you can sell your digital products consistently and scale your creator business with confidence.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.why1Title">Monetization-Focused Thinking</h3><p data-i18n="home.why1Desc">Every decision centers on helping you turn audience trust and expertise into real digital product revenue opportunities.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.why2Title">Digital Product Specialization</h3><p data-i18n="home.why2Desc">We work exclusively with creators, coaches, and experts selling digital products — never physical inventory.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.why3Title">Attention Into Sales</h3><p data-i18n="home.why3Desc">We bridge the gap between views, followers, and engagement and a clear path to becoming a paying customer.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.why4Title">Strategic Offers</h3><p data-i18n="home.why4Desc">Positioning, pricing, and packaging designed to make your digital products compelling and easy to say yes to.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.why5Title">Conversion-Focused Experiences</h3><p data-i18n="home.why5Desc">Clear customer journeys and friction-free checkout experiences built to help more visitors become buyers.</p></article>
+        <article class="feature-card reveal"><span aria-hidden="true">✓</span><h3 data-i18n="home.why6Title">Systems Designed for Growth</h3><p data-i18n="home.why6Desc">Foundations built so you can sell your digital products consistently and scale your creator business with confidence.</p></article>
       </div>
     </section>
 
     <section class="section section-shell faq-section" id="faq">
       <div class="section-heading reveal">
-        <p class="eyebrow">FAQ</p>
-        <h2>Common questions</h2>
+        <p class="eyebrow" data-i18n="home.faqEyebrow">FAQ</p>
+        <h2 data-i18n="home.faqTitle">Common questions</h2>
       </div>
       <div class="faq-list reveal">
         <div class="faq-item">
-          <button type="button" aria-expanded="false">Who is ARABYLEAD best suited for?<span>+</span></button>
-          <div class="faq-answer"><p>We partner with content creators, coaches, educators, and experts who have built an audience or specialized knowledge and want to monetize it by selling digital products.</p></div>
+          <button type="button" aria-expanded="false"><span data-i18n="home.faq1Q">Who is ARABYLEAD best suited for?</span><span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p data-i18n="home.faq1A">We partner with content creators, coaches, educators, and experts who have built an audience or specialized knowledge and want to monetize it by selling digital products.</p></div>
         </div>
         <div class="faq-item">
-          <button type="button" aria-expanded="false">What if I don't have a digital product offer yet?<span>+</span></button>
-          <div class="faq-answer"><p>We help you turn what you already know into a clear, valuable digital product offer — including positioning, pricing, packaging, and bonuses — so your audience has a strong reason to buy.</p></div>
+          <button type="button" aria-expanded="false"><span data-i18n="home.faq2Q">What if I don't have a digital product offer yet?</span><span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p data-i18n="home.faq2A">We help you turn what you already know into a clear, valuable digital product offer — including positioning, pricing, packaging, and bonuses — so your audience has a strong reason to buy.</p></div>
         </div>
         <div class="faq-item">
-          <button type="button" aria-expanded="false">Can you help if I already sell digital products?<span>+</span></button>
-          <div class="faq-answer"><p>Yes. If you already have a digital product but want more consistent sales, we help strengthen your offer, customer journey, buying experience, and marketing to unlock more conversion opportunities.</p></div>
+          <button type="button" aria-expanded="false"><span data-i18n="home.faq3Q">Can you help if I already sell digital products?</span><span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p data-i18n="home.faq3A">Yes. If you already have a digital product but want more consistent sales, we help strengthen your offer, customer journey, buying experience, and marketing to unlock more conversion opportunities.</p></div>
         </div>
         <div class="faq-item">
-          <button type="button" aria-expanded="false">How do we get started?<span>+</span></button>
-          <div class="faq-answer"><p>Send us a message through the contact form below with a bit about your audience, expertise, and goals. We'll start a conversation to explore how you can turn your audience into digital product revenue.</p></div>
+          <button type="button" aria-expanded="false"><span data-i18n="home.faq4Q">How do we get started?</span><span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p data-i18n="home.faq4A">Send us a message through the contact form below with a bit about your audience, expertise, and goals. We'll start a conversation to explore how you can turn your audience into digital product revenue.</p></div>
         </div>
       </div>
     </section>
@@ -240,28 +253,37 @@
     <section class="section contact-section" id="contact">
       <div class="section-shell contact-grid">
         <div class="contact-copy reveal">
-          <p class="eyebrow">Contact</p>
-          <h2>Ready to Turn Your Audience Into Revenue?</h2>
-          <p>Let's explore how you can turn your audience, knowledge, and expertise into a digital product that creates new revenue opportunities.</p>
+          <p class="eyebrow" data-i18n="home.contactEyebrow">Contact</p>
+          <h2 data-i18n="home.contactTitle">Ready to Turn Your Audience Into Revenue?</h2>
+          <p data-i18n="home.contactCopy">Let's explore how you can turn your audience, knowledge, and expertise into a digital product that creates new revenue opportunities.</p>
           <address>
-            <strong>ARABYLEAD LLC</strong><br>
-            500 4th St NW<br>
-            Suite 102 #1639<br>
-            Albuquerque, NM 87102<br>
-            United States<br>
-            <a href="mailto:contact@arabylead.com">contact@arabylead.com</a>
+            <strong dir="ltr">ARABYLEAD LLC</strong><br>
+            <span dir="ltr">500 4th St NW</span><br>
+            <span dir="ltr">Suite 102 #1639</span><br>
+            <span dir="ltr">Albuquerque, NM 87102</span><br>
+            <span data-i18n="common.countryUs">United States</span><br>
+            <a class="ltr-inline" dir="ltr" href="mailto:contact@arabylead.com">contact@arabylead.com</a>
           </address>
         </div>
         <form class="contact-form reveal" action="mailto:contact@arabylead.com" method="post" enctype="text/plain">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-          <label for="business">Business</label>
-          <input id="business" name="business" type="text" autocomplete="organization" required>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <button class="button button-primary btn-ripple" type="submit">Let's Talk</button>
+          <label for="name" data-i18n="home.formNameLabel">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" data-i18n-placeholder="home.formNamePlaceholder" data-error="name-error" required>
+          <span class="field-error" id="name-error"></span>
+
+          <label for="email" data-i18n="home.formEmailLabel">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" autocorrect="off" autocapitalize="none" spellcheck="false" placeholder="you@example.com" data-i18n-placeholder="home.formEmailPlaceholder" data-error="email-error" required>
+          <span class="field-error" id="email-error"></span>
+
+          <label for="business" data-i18n="home.formBusinessLabel">Business</label>
+          <input id="business" name="business" type="text" autocomplete="organization" placeholder="Your brand, channel, or niche" data-i18n-placeholder="home.formBusinessPlaceholder" data-error="business-error" required>
+          <span class="field-error" id="business-error"></span>
+
+          <label for="message" data-i18n="home.formMessageLabel">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your audience, digital product idea, or goals..." data-i18n-placeholder="home.formMessagePlaceholder" data-error="message-error" required></textarea>
+          <span class="field-error" id="message-error"></span>
+
+          <button class="button button-primary btn-ripple" type="submit" data-i18n="home.formSubmit">Let's Talk</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
@@ -269,27 +291,28 @@
 
   <footer class="footer">
     <div class="section-shell footer-inner">
-      <a class="brand" href="#home" aria-label="ARABYLEAD LLC home">
+      <a class="brand" href="#home" aria-label="ARABYLEAD LLC home" data-i18n-aria-label="common.brandAria">
         <span class="brand-icon" aria-hidden="true"><img src="assets/logo.svg" alt="" width="40" height="40"></span>
-        <span>ARABYLEAD</span>
+        <span dir="ltr">ARABYLEAD</span>
       </a>
-      <div class="footer-links" aria-label="Footer navigation">
-        <a href="#services">Services</a>
-        <a href="#outcomes">Outcomes</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="refund.html">Refund Policy</a>
+      <div class="footer-links" aria-label="Footer navigation" data-i18n-aria-label="common.footerNavAria">
+        <a href="#services" data-i18n="common.navServices">Services</a>
+        <a href="#outcomes" data-i18n="common.navOutcomes">Outcomes</a>
+        <a href="#about" data-i18n="common.navAbout">About</a>
+        <a href="#contact" data-i18n="common.navContact">Contact</a>
+        <a href="privacy.html" data-i18n="common.footerPrivacy">Privacy Policy</a>
+        <a href="terms.html" data-i18n="common.footerTerms">Terms of Service</a>
+        <a href="refund.html" data-i18n="common.footerRefund">Refund Policy</a>
       </div>
-      <div class="social-links" aria-label="Social links">
-        <a href="https://www.instagram.com/arabylead" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8Zm4.2 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 2a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Zm5.2-2.4a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0Z" fill="currentColor"/></svg></a>
+      <div class="social-links" aria-label="Social links" data-i18n-aria-label="common.socialAria">
+        <a href="https://www.instagram.com/arabylead" aria-label="Instagram" data-i18n-aria-label="common.instagramAria" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8Zm4.2 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 2a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Zm5.2-2.4a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0Z" fill="currentColor"/></svg></a>
       </div>
-      <p class="copyright">© <span id="year"></span> ARABYLEAD LLC. All rights reserved.</p>
+      <p class="copyright" data-i18n="common.copyright">© <span id="year"></span> ARABYLEAD LLC. All rights reserved.</p>
     </div>
   </footer>
 
-  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+  <button class="back-to-top" type="button" aria-label="Back to top" data-i18n-aria-label="common.backToTop">↑</button>
+  <script src="js/i18n.js" defer></script>
   <script src="js/script.js" defer></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,14 @@
   <meta name="description" content="Read the ARABYLEAD LLC Terms of Service for digital services, digital products, payments, intellectual property, user responsibilities, liability, and governing law.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#2563EB">
+  <script>(function(){try{var l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("arabylead_lang");if(l==="ar"){document.documentElement.lang="ar";document.documentElement.dir="rtl";document.documentElement.setAttribute("data-lang-loading","");setTimeout(function(){document.documentElement.removeAttribute("data-lang-loading")},1200)}}catch(e){}})();</script>
   <link rel="canonical" href="https://arabylead.com/terms.html">
+  <link rel="alternate" hreflang="en" href="https://arabylead.com/terms.html">
+  <link rel="alternate" hreflang="ar" href="https://arabylead.com/terms.html?lang=ar">
+  <link rel="alternate" hreflang="x-default" href="https://arabylead.com/terms.html">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_AR">
   <meta property="og:title" content="Terms of Service | ARABYLEAD LLC">
   <meta property="og:description" content="Terms governing ARABYLEAD LLC services, digital products, payments, responsibilities, intellectual property, and limitations.">
   <meta property="og:url" content="https://arabylead.com/terms.html">
@@ -20,28 +26,35 @@
   <meta name="twitter:image" content="https://arabylead.com/assets/og-image.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/legal.css">
 </head>
-<body>
+<body data-page="terms">
   <div class="loader" aria-hidden="true"><div class="loader-mark"><span></span><span></span><span></span></div></div>
   <header class="site-header" id="top">
-    <nav class="navbar" aria-label="Primary navigation">
-      <a class="brand" href="index.html#home" aria-label="ARABYLEAD LLC home">
+    <nav class="navbar" aria-label="Primary" data-i18n-aria-label="common.primaryNavAria">
+      <a class="brand" href="index.html#home" aria-label="ARABYLEAD LLC home" data-i18n-aria-label="common.brandAria">
         <span class="brand-icon" aria-hidden="true"><img src="assets/logo.svg" alt="" width="40" height="40"></span>
-        <span>ARABYLEAD</span>
+        <span dir="ltr">ARABYLEAD</span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <div class="nav-menu">
-        <a href="index.html#home">Home</a>
-        <a href="index.html#services">Services</a>
-        <a href="index.html#outcomes">Outcomes</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#home" data-i18n="common.navHome">Home</a>
+        <a href="index.html#services" data-i18n="common.navServices">Services</a>
+        <a href="index.html#outcomes" data-i18n="common.navOutcomes">Outcomes</a>
+        <a href="index.html#about" data-i18n="common.navAbout">About</a>
+        <a href="index.html#contact" data-i18n="common.navContact">Contact</a>
       </div>
-      <a class="nav-cta btn-ripple" href="index.html#contact">Work With Us</a>
+      <div class="nav-actions">
+        <div class="lang-switcher" role="group" aria-label="Language selection" data-i18n-aria-label="common.langGroupAria">
+          <button type="button" class="lang-btn active" data-lang-btn="en" aria-pressed="true" aria-label="EN — English" data-i18n-aria-label="common.switchToEn" lang="en">EN</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="ar" aria-pressed="false" aria-label="AR — العربية" data-i18n-aria-label="common.switchToAr" lang="ar">AR</button>
+        </div>
+        <a class="nav-cta btn-ripple" href="index.html#contact" data-i18n="common.navCta">Work With Us</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" data-i18n-aria-label="common.openMenu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
     </nav>
   </header>
 
@@ -49,82 +62,83 @@
     <section class="hero section-shell legal-hero" id="terms">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">Legal</p>
-        <h1>Terms of Service</h1>
-        <p class="hero-copy">Last updated: July 31, 2026. These Terms of Service govern your use of ARABYLEAD LLC websites, digital products, consulting services, funnel development, payment integrations, automation work, and related digital marketing services.</p>
+        <p class="eyebrow" data-i18n="terms.eyebrow">Legal</p>
+        <h1 data-i18n="terms.title">Terms of Service</h1>
+        <p class="hero-copy" data-i18n="terms.lead">Last updated: July 31, 2026. These Terms of Service govern your use of ARABYLEAD LLC websites, digital products, consulting services, funnel development, payment integrations, automation work, and related digital marketing services.</p>
       </div>
     </section>
 
-    <section class="section section-shell about-split" aria-label="Terms of Service content">
+    <section class="section section-shell about-split" aria-label="Terms of Service content" data-i18n-aria-label="terms.contentAria">
       <article class="about-panel reveal legal-copy">
         <section>
-          <h2>Acceptance of Terms</h2>
-          <p>By accessing our website, purchasing a digital product, requesting a consultation, or engaging ARABYLEAD LLC for services, you agree to these Terms of Service and any written agreement, proposal, statement of work, invoice, or order form that applies to your purchase.</p>
-          <p>If you do not agree with these terms, you should not use our website, purchase our products, or engage our services.</p>
+          <h2 data-i18n="terms.s1Title">Acceptance of Terms</h2>
+          <p data-i18n="terms.s1P1">By accessing our website, purchasing a digital product, requesting a consultation, or engaging ARABYLEAD LLC for services, you agree to these Terms of Service and any written agreement, proposal, statement of work, invoice, or order form that applies to your purchase.</p>
+          <p data-i18n="terms.s1P2">If you do not agree with these terms, you should not use our website, purchase our products, or engage our services.</p>
         </section>
         <section>
-          <h2>Services Offered</h2>
-          <p>ARABYLEAD LLC helps digital creators sell and scale digital products through sales funnel development, payment gateway integration, conversion optimization, marketing automation, email marketing, and digital growth consulting.</p>
-          <p>Project scope, deliverables, timelines, revision limits, and responsibilities may be defined in a separate written agreement or proposal. If a separate written agreement conflicts with these Terms, the specific written agreement controls for that project.</p>
+          <h2 data-i18n="terms.s2Title">Services Offered</h2>
+          <p data-i18n="terms.s2P1">ARABYLEAD LLC helps digital creators sell and scale digital products through sales funnel development, payment gateway integration, conversion optimization, marketing automation, email marketing, and digital growth consulting.</p>
+          <p data-i18n="terms.s2P2">Project scope, deliverables, timelines, revision limits, and responsibilities may be defined in a separate written agreement or proposal. If a separate written agreement conflicts with these Terms, the specific written agreement controls for that project.</p>
         </section>
         <section>
-          <h2>Payments</h2>
-          <p>You agree to pay all fees listed in the applicable checkout, invoice, proposal, or service agreement. Unless otherwise stated, payments are due according to the payment schedule provided at purchase or project approval.</p>
-          <p>Late payments may delay project work, delivery, access, support, or launch timelines. You are responsible for providing accurate billing information and for any taxes, bank fees, or payment processing fees that apply to your transaction.</p>
+          <h2 data-i18n="terms.s3Title">Payments</h2>
+          <p data-i18n="terms.s3P1">You agree to pay all fees listed in the applicable checkout, invoice, proposal, or service agreement. Unless otherwise stated, payments are due according to the payment schedule provided at purchase or project approval.</p>
+          <p data-i18n="terms.s3P2">Late payments may delay project work, delivery, access, support, or launch timelines. You are responsible for providing accurate billing information and for any taxes, bank fees, or payment processing fees that apply to your transaction.</p>
         </section>
         <section>
-          <h2>Intellectual Property</h2>
-          <p>Unless otherwise agreed in writing, ARABYLEAD LLC retains ownership of pre-existing materials, frameworks, templates, methods, internal processes, know-how, and reusable components used to provide services.</p>
-          <p>After full payment is received, you receive the rights stated in the applicable agreement or, if no separate agreement exists, a limited right to use final delivered materials for your own business purposes. You may not resell, redistribute, sublicense, or claim ownership of ARABYLEAD LLC proprietary materials unless expressly permitted in writing.</p>
+          <h2 data-i18n="terms.s4Title">Intellectual Property</h2>
+          <p data-i18n="terms.s4P1">Unless otherwise agreed in writing, ARABYLEAD LLC retains ownership of pre-existing materials, frameworks, templates, methods, internal processes, know-how, and reusable components used to provide services.</p>
+          <p data-i18n="terms.s4P2">After full payment is received, you receive the rights stated in the applicable agreement or, if no separate agreement exists, a limited right to use final delivered materials for your own business purposes. You may not resell, redistribute, sublicense, or claim ownership of ARABYLEAD LLC proprietary materials unless expressly permitted in writing.</p>
         </section>
         <section>
-          <h2>User Responsibilities</h2>
-          <p>You are responsible for providing accurate information, timely feedback, required account access, brand assets, legal approvals, product information, and any content needed for project delivery.</p>
-          <p>You agree not to use our services or deliverables for unlawful, misleading, abusive, infringing, or deceptive activities. You are responsible for ensuring your offers, marketing claims, customer communications, and business practices comply with applicable laws and platform rules.</p>
+          <h2 data-i18n="terms.s5Title">User Responsibilities</h2>
+          <p data-i18n="terms.s5P1">You are responsible for providing accurate information, timely feedback, required account access, brand assets, legal approvals, product information, and any content needed for project delivery.</p>
+          <p data-i18n="terms.s5P2">You agree not to use our services or deliverables for unlawful, misleading, abusive, infringing, or deceptive activities. You are responsible for ensuring your offers, marketing claims, customer communications, and business practices comply with applicable laws and platform rules.</p>
         </section>
         <section>
-          <h2>Limitation of Liability</h2>
-          <p>To the fullest extent permitted by law, ARABYLEAD LLC will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, including lost profits, lost revenue, lost data, business interruption, or reputational harm.</p>
-          <p>Our total liability for any claim related to the website, products, or services will not exceed the amount you paid to ARABYLEAD LLC for the specific product or service giving rise to the claim.</p>
+          <h2 data-i18n="terms.s6Title">Limitation of Liability</h2>
+          <p data-i18n="terms.s6P1">To the fullest extent permitted by law, ARABYLEAD LLC will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, including lost profits, lost revenue, lost data, business interruption, or reputational harm.</p>
+          <p data-i18n="terms.s6P2">Our total liability for any claim related to the website, products, or services will not exceed the amount you paid to ARABYLEAD LLC for the specific product or service giving rise to the claim.</p>
         </section>
         <section>
-          <h2>Account Termination and Service Refusal</h2>
-          <p>We may suspend or terminate access to services, digital products, communications, or project work if you violate these Terms, fail to make required payments, misuse our materials, provide false information, or engage in conduct that creates legal, operational, or reputational risk.</p>
-          <p>We may refuse service where we reasonably determine that a requested project is unlawful, misleading, unethical, outside our capabilities, or inconsistent with our business standards.</p>
+          <h2 data-i18n="terms.s7Title">Account Termination and Service Refusal</h2>
+          <p data-i18n="terms.s7P1">We may suspend or terminate access to services, digital products, communications, or project work if you violate these Terms, fail to make required payments, misuse our materials, provide false information, or engage in conduct that creates legal, operational, or reputational risk.</p>
+          <p data-i18n="terms.s7P2">We may refuse service where we reasonably determine that a requested project is unlawful, misleading, unethical, outside our capabilities, or inconsistent with our business standards.</p>
         </section>
         <section>
-          <h2>Governing Law</h2>
-          <p>These Terms are governed by the laws of the State of New Mexico, United States, without regard to conflict of law principles. Any disputes will be handled in the appropriate courts located in New Mexico unless another venue is required by applicable law.</p>
+          <h2 data-i18n="terms.s8Title">Governing Law</h2>
+          <p data-i18n="terms.s8P1">These Terms are governed by the laws of the State of New Mexico, United States, without regard to conflict of law principles. Any disputes will be handled in the appropriate courts located in New Mexico unless another venue is required by applicable law.</p>
         </section>
         <section>
-          <h2>Contact Information</h2>
-          <p><strong>ARABYLEAD LLC</strong><br>500 4th St NW<br>Suite 102 #1639<br>Albuquerque, NM 87102<br>United States<br><a href="mailto:contact@arabylead.com">contact@arabylead.com</a></p>
+          <h2 data-i18n="terms.s9Title">Contact Information</h2>
+          <p><strong dir="ltr">ARABYLEAD LLC</strong><br><span dir="ltr">500 4th St NW</span><br><span dir="ltr">Suite 102 #1639</span><br><span dir="ltr">Albuquerque, NM 87102</span><br><span data-i18n="common.countryUs">United States</span><br><a class="ltr-inline" dir="ltr" href="mailto:contact@arabylead.com">contact@arabylead.com</a></p>
         </section>
       </article>
-      <aside class="about-panel reveal legal-summary" aria-label="Terms summary">
-        <div><strong>Scope</strong><span>Services, products, and website use</span></div>
-        <div><strong>Payment</strong><span>Invoices, checkouts, and project schedules</span></div>
-        <div><strong>Rights</strong><span>Ownership, licensing, and responsibilities</span></div>
+      <aside class="about-panel reveal legal-summary" aria-label="Terms summary" data-i18n-aria-label="terms.summaryAria">
+        <div><strong data-i18n="terms.sum1Title">Scope</strong><span data-i18n="terms.sum1Sub">Services, products, and website use</span></div>
+        <div><strong data-i18n="terms.sum2Title">Payment</strong><span data-i18n="terms.sum2Sub">Invoices, checkouts, and project schedules</span></div>
+        <div><strong data-i18n="terms.sum3Title">Rights</strong><span data-i18n="terms.sum3Sub">Ownership, licensing, and responsibilities</span></div>
       </aside>
     </section>
   </main>
 
   <footer class="footer">
     <div class="section-shell footer-inner">
-      <a class="brand" href="index.html#home" aria-label="ARABYLEAD LLC home">
+      <a class="brand" href="index.html#home" aria-label="ARABYLEAD LLC home" data-i18n-aria-label="common.brandAria">
         <span class="brand-icon" aria-hidden="true"><img src="assets/logo.svg" alt="" width="40" height="40"></span>
-        <span>ARABYLEAD</span>
+        <span dir="ltr">ARABYLEAD</span>
       </a>
-      <div class="footer-links" aria-label="Footer navigation">
-        <a href="index.html#services">Services</a><a href="index.html#outcomes">Outcomes</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="refund.html">Refund Policy</a>
+      <div class="footer-links" aria-label="Footer navigation" data-i18n-aria-label="common.footerNavAria">
+        <a href="index.html#services" data-i18n="common.navServices">Services</a><a href="index.html#outcomes" data-i18n="common.navOutcomes">Outcomes</a><a href="index.html#about" data-i18n="common.navAbout">About</a><a href="index.html#contact" data-i18n="common.navContact">Contact</a><a href="privacy.html" data-i18n="common.footerPrivacy">Privacy Policy</a><a href="terms.html" data-i18n="common.footerTerms">Terms of Service</a><a href="refund.html" data-i18n="common.footerRefund">Refund Policy</a>
       </div>
-      <div class="social-links" aria-label="Social links">
-        <a href="https://www.instagram.com/arabylead" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8Zm4.2 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 2a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Zm5.2-2.4a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0Z" fill="currentColor"/></svg></a>
+      <div class="social-links" aria-label="Social links" data-i18n-aria-label="common.socialAria">
+        <a href="https://www.instagram.com/arabylead" aria-label="Instagram" data-i18n-aria-label="common.instagramAria" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8Zm4.2 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 2a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Zm5.2-2.4a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0Z" fill="currentColor"/></svg></a>
       </div>
-      <p class="copyright">&copy; <span id="year"></span> ARABYLEAD LLC. All rights reserved.</p>
+      <p class="copyright" data-i18n="common.copyright">&copy; <span id="year"></span> ARABYLEAD LLC. All rights reserved.</p>
     </div>
   </footer>
-  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+  <button class="back-to-top" type="button" aria-label="Back to top" data-i18n-aria-label="common.backToTop">↑</button>
+  <script src="js/i18n.js" defer></script>
   <script src="js/script.js" defer></script>
 </body>
 </html>
