@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">ARABYLEAD LLC logo</title>
+  <defs>
+    <linearGradient id="arabylead-logo-gradient" x1="0" y1="0" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="0.55" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="42" height="42" rx="11.813" fill="url(#arabylead-logo-gradient)"/>
+  <g transform="matrix(1 0 0 -1 0 42)" fill="#fff">
+    <path d="M22.2324 24.5772m0 0v-14.671h-4.118v3.063h-4.954l.532.753 2.085 2.949h2.337v4.538l.804.657 1.261 1.031.195.16z"/>
+    <path d="M18.9185 29.8335m0 0v-6.872l-.804-.657-.401-.329-.001-.001-1.836-2.596-1.913-2.707-2.086-2.949-.532-.753-2.165-3.063h-4.606l2.165 3.063.532.753 2.085 2.949 8.758 12.388.344.486z"/>
+    <path d="M36.1591 13.7075m0 0l-.484-.753-1.968-3.063h-10.048v18.284l-1.456-.912-1.384-.866-.474-.297v4.63l1.858 1.164 1.456.912 4.117 2.579v-21.678z"/>
+    <path d="M24.8039 29.0681m0 0l-4.454-3.615v3.883z"/>
+  </g>
+</svg>
